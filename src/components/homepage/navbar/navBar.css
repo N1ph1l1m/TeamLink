@@ -2,32 +2,33 @@
     width: 335px;
     height: 1000px;
     border:1px solid rebeccapurple;
-
-    
-
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
+
+
 .navBar_userLogo{
-    margin-left: 150px;
     margin-top: 25px;
+    margin-bottom: 27px;
+    display: block;
     width: 40px;
     height: 40px;
-    position: absolute;
-    
 }
-.navBar_list_wrap{
-   margin: 90px auto;
-    width: 290px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+
+.navBar_list_block_img{
+    width: 18px;
+    height: 18px;
+    margin-right: 18px;
 }
-.navBrar_list_item{
+.navBar_list_block_text{
+    color:#A9A9A9;
+    font-family: Rubik;
     text-decoration: none;
-    color: #686868;
     font-size: 16px;
+    font-style: normal;
     font-weight: 500;
-    font-family:'Times New Roman', Times, serif;
     line-height: normal;
-    margin-bottom: 40px;
-    margin-left: 160px;
 }
+
