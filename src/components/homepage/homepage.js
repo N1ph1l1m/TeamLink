@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import Posts from "./posts";
-import NavBar from "./navbar/navBar";
+import News from "./news/news";
+import NavBar from "../navbar/navBar";
 import Todo from "./todo";
 import  "./homepage.css"
 
@@ -10,7 +10,7 @@ export default class HomePage extends Component{
     return(
       <div className="homePage_wrap">
         <NavBar/>
-        <Posts/>
+        <News/> 
         <Todo/>
       </div>
     )

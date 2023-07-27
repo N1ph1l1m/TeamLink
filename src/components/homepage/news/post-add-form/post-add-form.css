@@ -1,0 +1,55 @@
+.postAddForm-wrapper{
+    margin: 20px auto;
+    width: 738px;
+    height: 193px;
+    border-radius: 10px;
+    background: #F1F1F1;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+}
+.postAddForm-item{
+    width: 709px;
+    height: 117px;
+    border-radius: 10px;
+    background: #FFF;
+    margin: 16px auto;
+}
+.postAddForm-item-inputText{
+    width: 706px;
+    height: 80px;
+    border-radius: 10px;
+    border:0px solid transparent;
+    overflow: scroll;
+}
+.postAddForm-item-addContent-wrap{
+    width: 706px;
+    height: 33px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+.postAddForm-item-addContent-img{
+    width: 20px;
+    height: 20px;
+    margin-left: 16px;
+}
+.postAddForm-addPost-wrap-button{
+    margin-top: -10px;
+    width: 720px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+   
+}
+.postAddForm-addPost-item-button{
+    width: 102px;
+    height: 35px;
+    background: #150AA1;
+    color:white;
+    border-radius:10px;
+    border:0px solid transparent;
+
+}

@@ -1,7 +1,6 @@
 .navBar_wrap{
     width: 335px;
     height: 1000px;
-    border:1px solid rebeccapurple;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
@@ -23,6 +22,7 @@
     margin-right: 18px;
 }
 .navBar_list_block_text{
+    
     color:#A9A9A9;
     font-family: Rubik;
     text-decoration: none;
