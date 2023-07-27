@@ -4,9 +4,14 @@ import "./navBar.css";
 //img
 import logo from "./img/logoUser.png";
 import user from "./img/user.png";
-import messages from "./img/messages.png";
+import messages from "./img/message.png";
 import news from "./img/news.png";
-import tasks from "./img/list.png";
+import tasks from "./img/tasks.png";
+import notification from "./img/notification.png"
+import calendar from "./img/calendar.png"
+import docs from "./img/docs.png"
+import groups from "./img/groups.png"
+
 
 const NavWrap = styled.div`
     display: flex;
@@ -36,13 +41,6 @@ export default class NavBar extends Component {
           </NavWrap>
 
           <NavWrap>
-          <img src={messages} alt="user" className="navBar_list_block_img"></img>
-          <a href="fff" className="navBar_list_block_text">
-              Сообщения
-            </a>
-          </NavWrap>
-
-          <NavWrap>
           <img src={tasks} alt="user" className="navBar_list_block_img"></img>
           <a href="fff" className="navBar_list_block_text">
               Задачи
@@ -50,11 +48,40 @@ export default class NavBar extends Component {
           </NavWrap>
 
           <NavWrap>
-          <img src={user} alt="user" className="navBar_list_block_img"></img>
+          <img src={messages} alt="user" className="navBar_list_block_img"></img>
+          <a href="fff" className="navBar_list_block_text">
+              Сообщения
+            </a>
+          </NavWrap>
+
+          <NavWrap>
+          <img src={notification} alt="user" className="navBar_list_block_img"></img>
           <a href="fff" className="navBar_list_block_text">
               Уведомления
             </a>
           </NavWrap>
+
+          <NavWrap>
+          <img src={calendar} alt="user" className="navBar_list_block_img"></img>
+          <a href="fff" className="navBar_list_block_text">
+              Календарь
+            </a>
+          </NavWrap>
+
+          <NavWrap>
+          <img src={docs} alt="user" className="navBar_list_block_img"></img>
+          <a href="fff" className="navBar_list_block_text">
+              Документы
+            </a>
+          </NavWrap>
+
+          <NavWrap>
+          <img src={groups} alt="user" className="navBar_list_block_img"></img>
+          <a href="fff" className="navBar_list_block_text">
+              Группы
+            </a>
+          </NavWrap>
+      
       
         </div>
       </div>

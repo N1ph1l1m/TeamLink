@@ -1,16 +1,20 @@
 import React, { Component } from "react";
 import "./post-add-form.css";
+import styled from "styled-components";
+//img
 import img from "./img/img.png";
 import video from "./img/video.png";
 import microphone from "./img/microphone.png";
 import music from "./img/music.png";
-import styled from "styled-components";
+import docs from "./img/docs.png";
+
 
 const IconInput = styled.div`
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   margin-left: 16px;
   cursor: pointer;
+
 `;
 
 export default class PostAddForm extends Component {
@@ -68,6 +72,16 @@ export default class PostAddForm extends Component {
               id="fileInputMusic"
               className="postAddForm-item-addContent-item-img"
               accept="audio/"></input>
+
+            <label for="fileInputDocs">
+              <IconInput>
+                <img src={docs} alt="music"></img>
+              </IconInput>
+            </label>
+            <input
+              type="file"
+              id="fileInputDocs"
+              className="postAddForm-item-addContent-item-img"></input>
 
           </div>
         </div>
