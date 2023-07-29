@@ -1,0 +1,88 @@
+.listItem_header_wrap{
+    width: 730px;
+    height: 56px;
+}
+
+.listItem_header_item{
+    margin-top: 7px;
+    margin-left: 15px;
+    width: 220px;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap ;
+    align-items: center;
+}
+
+.listItem_header_img{
+    width: 30px;
+    height: 30px;
+    border-radius:50px;
+    border:1px solid black;
+}
+
+.listItem_header_label_wrap{
+    margin-left: 8px;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    flex-flow: column;
+}
+.listItem_header_label_text{
+    color: black;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.time{ 
+    color: gray;
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5px;
+}
+
+
+
+.listItem_content_wrap{
+    width: 700px;
+    min-height: 100px;
+    margin-left: 15px;
+}
+
+
+
+.listItem_button_wrap{
+    width: 706px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.listItem_button_item{
+    min-width: 100px;
+    height: 25px;
+    background-color: transparent;
+    border:1px solid transparent;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+}
+.listItem_button_item_img{
+    margin: -2px  -6px;
+}
+.listItem_button_label{
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
