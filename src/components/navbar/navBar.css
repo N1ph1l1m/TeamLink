@@ -14,6 +14,8 @@
     display: block;
     width: 40px;
     height: 40px;
+    border-radius:50px;
+    border:1px solid black;
 }
 
 .navBar_list_block_img{

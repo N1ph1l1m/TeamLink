@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from 'styled-components'
 import "./navBar.css";
 //img
-import logo from "./img/logoUser.png";
+import logo from "./img/logo.png";
 import user from "./img/user.png";
 import messages from "./img/message.png";
 import news from "./img/news.png";

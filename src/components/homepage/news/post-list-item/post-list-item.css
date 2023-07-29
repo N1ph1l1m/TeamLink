@@ -17,7 +17,7 @@
     width: 30px;
     height: 30px;
     border-radius:50px;
-    border:1px solid black;
+    border:1px solid rgba(0, 0, 0, 0.771);
 }
 
 .listItem_header_label_wrap{
@@ -32,7 +32,7 @@
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
 }
 .time{ 
@@ -40,20 +40,16 @@
     font-family: Rubik;
     font-size: 14px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
     margin-top: 5px;
 }
-
-
 
 .listItem_content_wrap{
     width: 700px;
     min-height: 100px;
     margin-left: 15px;
 }
-
-
 
 .listItem_button_wrap{
     width: 706px;
