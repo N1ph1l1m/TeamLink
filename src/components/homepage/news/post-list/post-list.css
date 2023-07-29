@@ -9,4 +9,5 @@
     display: flex;
     justify-content: flex-start;
     flex-flow: column nowrap;
+    margin-bottom: 15px;
 }

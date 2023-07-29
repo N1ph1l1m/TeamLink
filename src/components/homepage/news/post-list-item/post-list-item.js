@@ -46,6 +46,7 @@ export default class PostListItem extends Component {
                    </button>
                    
                 </div>    
+
             </>
         )
     }

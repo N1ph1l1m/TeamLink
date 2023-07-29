@@ -6,7 +6,7 @@ import Postlist from "./post-list";
 
 const NewsWrap = styled.div`
     width: 770px;
-    height: 1000px;
+    min-height: 1000px;
     border: 1px solid #E4E4E4;
     color: rgb(12, 11, 11);
     `
@@ -17,6 +17,10 @@ export default class News extends Component{
       <NewsWrap>
         <PostAddForm/>
         <Postlist/>
+        <Postlist/>
+        <Postlist/>
+
+
       </NewsWrap>
     )
    }
