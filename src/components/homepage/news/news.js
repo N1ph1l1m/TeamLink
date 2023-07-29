@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import  "./news.css"
 import styled from 'styled-components'
 import PostAddForm from "./post-add-form/post-add-form";
+import Postlist from "./post-list";
 
 const NewsWrap = styled.div`
     width: 770px;
@@ -15,6 +16,7 @@ export default class News extends Component{
     return(
       <NewsWrap>
         <PostAddForm/>
+        <Postlist/>
       </NewsWrap>
     )
    }
