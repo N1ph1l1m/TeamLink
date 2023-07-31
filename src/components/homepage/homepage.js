@@ -1,9 +1,10 @@
 import React, {Component} from "react";
 import News from "./news/news";
-import NavBar from "../navbar/navBar";
+//import NavBar from "../navbar/navBar";
 import Todo from "./todo";
 import  "./homepage.css"
-
+import NavBar from "../navbar/navBar";
+  
 
 export default class HomePage extends Component{
    render(){
