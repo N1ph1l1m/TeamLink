@@ -1,7 +1,7 @@
 import React , {Component} from "react";
 import "./dialog-list.css"
 import styled from 'styled-components'
-import SearchDialog from "../serch-dialogs/search-dialogs";
+import DialogListItem from "../dialog-list-item/dialog-list-item";
 
 
 const DialogListWrap = styled.div`
@@ -10,6 +10,7 @@ const DialogListWrap = styled.div`
     color: rgb(12, 11, 11);
     margin:0px auto;
     position:relative;
+
 
     &::before {
         content: ''; 
@@ -35,7 +36,7 @@ export default class DialogList extends  Component{
     render(){
         return(
            <DialogListWrap>
-
+            <DialogListItem/>
            </DialogListWrap>
         )
     }
