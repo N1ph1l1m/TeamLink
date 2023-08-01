@@ -8,6 +8,7 @@ const NewsWrap = styled.div`
     min-height: 1000px;
     border: 1px solid #E4E4E4;
     color: rgb(12, 11, 11);
+
     `
 
 export default class News extends Component{

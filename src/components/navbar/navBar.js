@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import styled from 'styled-components'
 import "./navBar.css";
+import {Routes,Route,Link} from 'react-router-dom';
+import Messages from "../messages";
+
 //img
 import logo from "./img/logo.png";
 import user from "./img/user.png";
@@ -11,7 +14,7 @@ import notification from "./img/notification.png"
 import calendar from "./img/calendar.png"
 import docs from "./img/docs.png"
 import groups from "./img/groups.png"
-
+import News from "../homepage/news/news";
 
 const NavWrap = styled.div`
     display: flex;
@@ -28,63 +31,66 @@ export default class NavBar extends Component {
         <img className="navBar_userLogo" src={logo} alt="Logo" />
           <NavWrap>
           <img src={user} alt="user" className="navBar_list_block_img"></img>
-            <a href="fff" className="navBar_list_block_text">
+            <Link to="/" className="navBar_list_block_text">
               Моя страница
-            </a>
+            </Link>
           </NavWrap>
 
           <NavWrap>
           <img src={news} alt="user" className="navBar_list_block_img"></img>
-          <a href="fff" className="navBar_list_block_text">
+          <Link to="/news" className="navBar_list_block_text">
               Новости
-            </a>
+            </Link>
           </NavWrap>
 
           <NavWrap>
           <img src={tasks} alt="user" className="navBar_list_block_img"></img>
-          <a href="fff" className="navBar_list_block_text">
+          <Link to="/news" className="navBar_list_block_text">
               Задачи
-            </a>
+            </Link>
           </NavWrap>
 
           <NavWrap>
           <img src={messages} alt="user" className="navBar_list_block_img"></img>
-          <a href="fff" className="navBar_list_block_text">
+          <Link to="/message" className="navBar_list_block_text">
               Сообщения
-            </a>
+            </Link>
           </NavWrap>
 
           <NavWrap>
           <img src={notification} alt="user" className="navBar_list_block_img"></img>
-          <a href="fff" className="navBar_list_block_text">
+          <Link to="/news" className="navBar_list_block_text">
               Уведомления
-            </a>
+            </Link>
           </NavWrap>
 
           <NavWrap>
           <img src={calendar} alt="user" className="navBar_list_block_img"></img>
-          <a href="fff" className="navBar_list_block_text">
+          <Link to="/news" className="navBar_list_block_text">
               Календарь
-            </a>
+            </Link>
           </NavWrap>
 
           <NavWrap>
           <img src={docs} alt="user" className="navBar_list_block_img"></img>
-          <a href="fff" className="navBar_list_block_text">
+          <Link to="/news" className="navBar_list_block_text">
               Документы
-            </a>
+            </Link>
           </NavWrap>
 
           <NavWrap>
           <img src={groups} alt="user" className="navBar_list_block_img"></img>
-          <a href="fff" className="navBar_list_block_text">
+          <Link to="/news" className="navBar_list_block_text">
               Группы
-            </a>
+            </Link>
           </NavWrap>
-      
-      
         </div>
+        <Routes>
+          <Route path="/news" element={<News/>}/>
+          <Route path="/message" element={<Messages/>}/>
+        </Routes>
       </div>
+     
     );
   }
 }
