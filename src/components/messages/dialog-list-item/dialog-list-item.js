@@ -1,7 +1,7 @@
 import React , {Component} from "react";
 import "./dialog-list-item.css"
 import styled from 'styled-components'
-import logo from "../../navbar/img/logo.png"
+import logo from "../../../routes/./img/logo.png"
 
 const ListItem = styled.div`
     position:absolute;

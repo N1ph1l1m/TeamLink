@@ -12,15 +12,14 @@ code {
     monospace;
 }
 
-
 .navBar_wrap{
-  width: 335px;
-  border:1px solid blueviolet;
-  height: 1000px;
+  width: 1400px;
+  height: auto;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: start;
+  margin-left: 50px;
 }
 
 
