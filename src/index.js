@@ -2,23 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Header from "../src/components/header/header"
-import App from './components/app/app';
-//import NavBar from './components/navbar/navBar';
+import Root from "./routes/root"
+//import App from './components/app/app';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-// import styled from 'styled-components'
-// const AppWrap = styled.div`width: 1440px;
-//                 height: auto;
-//                 margin: 0 auto;
-//                 display: flex;
-//                 border:3px solid red;`
+
+const router = createBrowserRouter([
+  {
+    path:'/',
+    element:<Root/>
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header/>
-      <App>
-      </App>
+    <RouterProvider router={router}>
+    </RouterProvider>
+  
+   
+
   </React.StrictMode>
 );
 reportWebVitals();

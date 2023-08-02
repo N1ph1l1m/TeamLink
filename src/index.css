@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.navBar_wrap{
+  width: 335px;
+  border:1px solid blueviolet;
+  height: 1000px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.navBar_userLogo{
+  margin-top: 25px;
+  margin-bottom: 27px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius:50px;
+  border:1px solid black;
+}
+
+.navBar_list_block_img{
+  width: 24px;
+  height: 24px;
+  margin-right: 18px;
+}
+.navBar_list_block_text{
+  
+  color:#292D32;
+  font-family: Rubik;
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
