@@ -1,15 +1,19 @@
 .navBar_wrap{
-    width: 335px;
-    border:1px solid blueviolet;
-    height: 1000px;
+
+    width: 1500px;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-.navBar_userLogo{
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: start;
+    /* border:1px solid rgb(47, 0, 255); */
+  }
+  .navBar_list_wrap{
+    width: 200px;
+    margin-right: 100px;
+    margin-left: 50px;
+  }
+  
+  .navBar_userLogo{
     margin-top: 25px;
     margin-bottom: 27px;
     display: block;
@@ -17,14 +21,14 @@
     height: 40px;
     border-radius:50px;
     border:1px solid black;
-}
-
-.navBar_list_block_img{
+  }
+  
+  .navBar_list_block_img{
     width: 24px;
     height: 24px;
     margin-right: 18px;
-}
-.navBar_list_block_text{
+  }
+  .navBar_list_block_text{
     
     color:#292D32;
     font-family: Rubik;
@@ -33,5 +37,4 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-}
-
+  }

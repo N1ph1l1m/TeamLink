@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Header from "../src/components/header/header"
 import Root from "./routes/root"
-//import App from './components/app/app';
+import News from './components/homepage/news/news';
  import styled from 'styled-components'
 import reportWebVitals from './reportWebVitals';
 import {
@@ -21,31 +21,34 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/message",
-        element:<Messages/>
+        element:<Messages/>,        
+      },
+      {
+        path:"/news",
+        element:<News/>,
       },
     ],
   },
 ]);
 
-const AppWrap = styled.div`width: 1500px;
-                margin: 0 auto;
-                ${'' /* border:1px solid red; */}
+const AppWrap = styled.div`
+                width: 1600px;
+                ${'' /* border:3px solid red; */}
+                margin:0 auto;
+                display:flex;
+                justify-content:center;
+                flex-direction: row;
+                flex-wrap: nowrap;
                 `
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
     <Header/>
     <AppWrap>
-      <RouterProvider router={router}/>
+    <RouterProvider router={router}/>
     </AppWrap>
+  </>
 
-
-   
-
-  
-   
-
-  </React.StrictMode>
 );
 reportWebVitals();

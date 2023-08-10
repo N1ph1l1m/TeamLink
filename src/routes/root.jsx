@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
+import "./root.css";
+
+//img
 import logo from "./img/logo.png";
 import user from "./img/user.png";
 import messages from "./img/message.png";
@@ -18,13 +21,9 @@ const NavWrap = styled.div`
   margin-bottom: 20px;
 `;
 
-//img
-
-
 export default function Root() {
   return (
     <>
-
       <div className="navBar_wrap">
         <div className="navBar_list_wrap">
           <img className="navBar_userLogo" src={logo} alt="Logo" />
@@ -44,7 +43,7 @@ export default function Root() {
 
           <NavWrap>
             <img src={tasks} alt="user" className="navBar_list_block_img"></img>
-            <Link to="/news" className="navBar_list_block_text">
+            <Link to="/" className="navBar_list_block_text">
               Задачи
             </Link>
           </NavWrap>
@@ -66,7 +65,7 @@ export default function Root() {
               alt="user"
               className="navBar_list_block_img"
             ></img>
-            <Link to="/news" className="navBar_list_block_text">
+            <Link to="/" className="navBar_list_block_text">
               Уведомления
             </Link>
           </NavWrap>
@@ -77,36 +76,28 @@ export default function Root() {
               alt="user"
               className="navBar_list_block_img"
             ></img>
-            <Link to="/news" className="navBar_list_block_text">
+            <Link to="/" className="navBar_list_block_text">
               Календарь
             </Link>
           </NavWrap>
 
           <NavWrap>
             <img src={docs} alt="user" className="navBar_list_block_img"></img>
-            <Link to="/news" className="navBar_list_block_text">
+            <Link to="/" className="navBar_list_block_text">
               Документы
             </Link>
           </NavWrap>
-
           <NavWrap>
-            <img
-              src={groups}
-              alt="user"
-              className="navBar_list_block_img"
-            ></img>
-            <Link to="/news" className="navBar_list_block_text">
+            <img src={groups} alt="/" className="navBar_list_block_img"></img>
+            <Link to="/" className="navBar_list_block_text">
               Группы
             </Link>
           </NavWrap>
         </div>
         <div id="detail">
-        <Outlet />
+          <Outlet />
+        </div>
       </div>
-      </div>
-
-    
     </>
-    
   );
 }

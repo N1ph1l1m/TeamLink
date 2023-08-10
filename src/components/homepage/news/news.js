@@ -19,6 +19,18 @@ export default class News extends Component{
         <Postlist/>
         <Postlist/>
         <Postlist/>
+        <Postlist/>
+        <Postlist/>
+        <Postlist/>
+        <Postlist/>
+        <Postlist/>
+        <Postlist/>
+        <Postlist/>
+        <Postlist/>
+        <Postlist/>
+        <Postlist/>
+        <Postlist/>
+        <Postlist/>
 
 
       </NewsWrap>
