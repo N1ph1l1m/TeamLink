@@ -1,16 +1,16 @@
 .navBar_wrap{
 
-    width: 1500px;
+    width: 1550px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row no-wrap;
     justify-content: start;
     align-items: start;
     /* border:1px solid rgb(47, 0, 255); */
   }
   .navBar_list_wrap{
     width: 200px;
-    margin-right: 100px;
-    margin-left: 50px;
+    margin-right: 80px;
+    /* margin-left: 50px; */
   }
   
   .navBar_userLogo{

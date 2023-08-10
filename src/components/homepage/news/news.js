@@ -4,7 +4,7 @@ import PostAddForm from "./post-add-form/post-add-form";
 import Postlist from "./post-list";
 
 const NewsWrap = styled.div`
-    width: 770px;
+    width: 860px;
     min-height: 1000px;
     border: 1px solid #E4E4E4;
     color: rgb(12, 11, 11);

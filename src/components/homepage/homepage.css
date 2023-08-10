@@ -1,9 +1,9 @@
 .homePage_wrap{
-    width: 1440px;
+    width: 1000px;
     height: auto;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
-    margin: 0 auto;
+    justify-content: space-between;
+    /* border: 3px solid purple; */
     
 }
