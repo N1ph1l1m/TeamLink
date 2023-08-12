@@ -30,13 +30,14 @@ const router = createBrowserRouter([
 ]);
 
 const AppWrap = styled.div`
-                width: 1700px;
-                ${'' /* border:3px solid red; */}
+                max-width: 1700px;
+                border:3px solid red;
                 margin:0 auto;
                 display:flex;
                 justify-content:center;
                 flex-direction: row;
                 flex-wrap: nowrap;
+               
                 `
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

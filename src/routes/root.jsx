@@ -94,7 +94,7 @@ export default function Root() {
             </Link>
           </NavWrap>
         </div>
-        <div id="detail">
+        <div  className="outlet_Block"id="detail">
           <Outlet />
         </div>
       </div>

@@ -2,14 +2,19 @@
 
     width: 1550px;
     display: flex;
+    position: relative;
     flex-flow: row no-wrap;
     justify-content: start;
     align-items: start;
     /* border:1px solid rgb(47, 0, 255); */
   }
   .navBar_list_wrap{
+    position: relative;
     width: 200px;
     margin-right: 80px;
+    /* border:1px solid rgb(255, 0, 187); */
+    left: 30px;
+
     /* margin-left: 50px; */
   }
   
@@ -38,3 +43,13 @@
     font-weight: 500;
     line-height: normal;
   }
+  .outlet_Block{
+    display: flex;
+    justify-content: space-around;
+    width: 1140px;
+    /* border:3px green solid; */
+  }
+   @media screen and (max-width:1200px){
+    
+
+   }
