@@ -12,8 +12,6 @@ const ListItem = styled.div`
     left:8px;
     display:flex;
     justify-content:center;
-
-
 `
 
 export default class DialogListItem extends  Component{
