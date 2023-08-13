@@ -1,9 +1,0 @@
-.homePage_wrap{
-    max-width: 1300px;
-    height: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    /* border: 3px solid purple; */
-    
-}

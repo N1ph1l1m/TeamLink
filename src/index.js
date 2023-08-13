@@ -30,8 +30,7 @@ const router = createBrowserRouter([
 ]);
 
 const AppWrap = styled.div`
-                max-width: 1700px;
-                border:3px solid red;
+                max-width: 1400px;
                 margin:0 auto;
                 display:flex;
                 justify-content:center;

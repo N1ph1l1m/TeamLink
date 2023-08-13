@@ -5,7 +5,6 @@ import styled from 'styled-components'
 
 const TodoWR = styled.div`
           width: 300px;
-          border:2px solid rgb(0, 255, 204);
           margin-right: 10px;
     `
 

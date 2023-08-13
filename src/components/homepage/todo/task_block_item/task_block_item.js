@@ -26,11 +26,11 @@ export default  class TaskBlockItem  extends Component{
                             </li>
                             <li>
                                 <input type="checkbox" name="task2"/>
-                                <label for="vehicle2">Create  Frontend</label>
+                                <label for="vehicle2"> Create  Frontend</label>
                             </li>
                             <li>
                                 <input type="checkbox" name="task3"/>
-                                <label for="vehicle3">Create Backend</label>
+                                <label for="vehicle3"> Create Backend</label>
                             </li>
                             
                         </ul>

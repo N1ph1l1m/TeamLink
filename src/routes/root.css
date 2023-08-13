@@ -1,12 +1,11 @@
 .navBar_wrap{
 
-    width: 1550px;
+    width: 1350px;
     display: flex;
     position: relative;
     flex-flow: row no-wrap;
     justify-content: start;
     align-items: start;
-    /* border:1px solid rgb(47, 0, 255); */
   }
   .navBar_list_wrap{
     position: relative;
