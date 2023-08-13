@@ -1,0 +1,20 @@
+.title_Block{
+    height: 20px;
+    border:1px solid green;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.title_Block_item{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 2px;
+}
+.task_Block{
+    min-height: 50px;
+    border:1px solid green;
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    padding-left: 8px;
+    overflow: hidden;
+}

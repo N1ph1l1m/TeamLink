@@ -14,6 +14,7 @@ const TaskBlockWR = styled.div`
         box-sizing: border-box;
         padding:5px;
     `
+    
 
 export default class TaskBlock extends Component{
     render(){
