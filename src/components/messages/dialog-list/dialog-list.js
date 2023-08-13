@@ -1,5 +1,4 @@
 import React , {Component} from "react";
-import "./dialog-list.css"
 import styled from 'styled-components'
 import DialogListItem from "../dialog-list-item/dialog-list-item";
 

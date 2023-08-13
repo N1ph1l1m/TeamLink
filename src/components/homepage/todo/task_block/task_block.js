@@ -8,7 +8,6 @@ const TaskBlockWR = styled.div`
         border:1px solid purple;
         margin:0px auto;
         margin-top:20px;
-        background-color:yellow;
         display:flex;
         justify-content: center;
         box-sizing: border-box;

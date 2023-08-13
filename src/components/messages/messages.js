@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import DialogList from "./dialog-list/dialog-list";
 import SearchDialog from "./serch-dialogs/search-dialogs";
-import "./messages.css";
 import styled from "styled-components";
 
 const MessagesWrap = styled.div`
