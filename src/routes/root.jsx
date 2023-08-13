@@ -29,7 +29,7 @@ export default function Root() {
           <img className="navBar_userLogo" src={logo} alt="Logo" />
           <NavWrap>
             <img src={user} alt="user" className="navBar_list_block_img"></img>
-            <Link to="/" className="navBar_list_block_text">
+            <Link to="/profile" className="navBar_list_block_text">
               Моя страница
             </Link>
           </NavWrap>

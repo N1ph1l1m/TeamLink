@@ -7,6 +7,7 @@ import Root from "./routes/root"
 import HomePage from './components/homepage/homepage';
 import ErrorPage from './components/errorPage/error-page';
 import Messages from './components/messages';
+import MyPage from './components/myPage';
 
 import './index.css';
 import styled from 'styled-components'
@@ -18,8 +19,16 @@ const router = createBrowserRouter([
     errorElement:<ErrorPage/>,
     children:[
       {
+        path:"/profile",
+        element:<MyPage/>,        
+      },
+      {
         path:"/message",
         element:<Messages/>,        
+      },
+      {
+        path:"/news",
+        element:<HomePage/>,
       },
       {
         path:"/news",
