@@ -54,8 +54,8 @@ export default class MyPage extends Component{
                 </button>
             </div>
             </div>
-            </div>
-            </MyPageWrap>  
+            </div>  
+                </MyPageWrap>  
         )
     }
 }
