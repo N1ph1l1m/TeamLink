@@ -62,113 +62,60 @@
     height: 350px;
     border: 1px solid #e4e4e4;
   }
-  .main_backgroundProf {
+  .myPage_background{
     position: absolute;
     width: 999px;
     height: 227px;
     border-radius: 10px;
   }
-  .main_wrap_avatar {
-    position: absolute;
-    margin-top: 160px;
-    margin-left: 20px;
-    z-index: 2;
-  }
-  
-  .main_item_avatar {
-    max-width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid rgb(255, 255, 255);
-  }
-
-  .main_profileHeader {
+  .myPage_profileWrap{
     background-color: white;
     width: 999px;
-    height: 120px;
+    height: 100px;
     position: absolute;
     top: 210px;
     border-radius: 10px;
     z-index: 1;
-    border:1px solid blue;
     display: flex;
-    justify-content:center;
+    justify-content:space-around;
     align-items:center;
   }
-  .main_profileHeader_user {
-    width: 300px;
+  .myPage_profile_Avatar {
+    max-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+    margin-top: -70px;
+  }
+
+  .myPage_profileItem{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+  .myPage_profileItem_user {
     height: 100px;
   }
   .user_name {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight:600px;
+    color:#3486eb;
   }
-  
-  .main_profileHeader_editProfile {
-    margin-top: -40px;
-  }
-  .editProfile_button {
-    margin-left: 10px;
-    font-size: 12px;
-    border-radius: 6px;
-    background-color: rgb(227, 229, 232);
-    color: rgb(13, 150, 208);
-    border: 1px solid white;
-    width: 189px;
-    height: 25px;
-  }
-  .more_arrow {
-    position: absolute;
-    top: 4px;
-    right: 17px;
-  }
-  /* */
-  .profile_wrapper {
-    position: absolute;
-    top: 365px;
-    height: 100%;
+  .myPage_profileItem_buttons{
+    display: block;
     display: flex;
-    justify-content: space-between;
+    align-items:center;
   }
-  .profile_wrapper_content {
-    width: 550px;
-    height: 100%;
-  }
-  .profile_items_media {
-    width: 100%;
-    height: 354px;
-    margin-bottom: 10px;
-    background-color: white;
+  .buttons_editProfile {
+    width: 130px;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 900;
     border-radius: 10px;
+    color:#3486eb;
+    background-color:transparent;
+    border: 1px solid #e4e4e4;
   }
-  .profile_item_addNews {
-    width: 100%;
-    height: 52px;
-    border-radius: 10px;
-    background-color: white;
-  }
-  .wrapper_social {
-    /* border:1px solid green; */
-    width: 345px;
-    margin-left: 16px;
-  }
-  .social_item_friends {
-    width: 345px;
-    height: 244px;
-    background-color: white;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  .social_item_gifts {
-    width: 345px;
-    height: 187px;
-    border-radius: 10px;
-    background-color: white;
-    margin-bottom: 10px;
-  }
-  .social_item_subscribers {
-    width: 345px;
-    height: 354px;
-    border-radius: 10px;
-    background-color: white;
-  }
-  
+

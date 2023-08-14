@@ -6,10 +6,11 @@ import avatar from '../../routes/img/samurai.png'
 import cover from '../../routes/img/cover.jpg'
 
 const MyPageWrap = styled.div`
+    margin-top:10px;
     width:1000px;
     background-color: white;
     border-radius: 10px;
-    height: 330px;
+    height: 300px;
     border: 1px solid #e4e4e4;
 `;
 
@@ -29,69 +30,32 @@ const MyPageWrap = styled.div`
 export default class MyPage extends Component{
     render(){
         return(
-        
-            <>
            <MyPageWrap>
             <img
-                className="main_backgroundProf"
-                src={cover}/>
-            <div className="main_wrap_avatar">
+                className="myPage_background"
+                src={cover} alt="cover"/>
+            <div className="myPage_profileWrap">
             <img
-                className="main_item_avatar"
+                className="myPage_profile_Avatar"
                 src={avatar}
                 alt="avatar"
             />
+            <div className="myPage_profileItem">
+            <div className="myPage_profileItem_user">
+                <h2 className="user_name">Piter Parker</h2>
+                <span className="user_status">Profile status</span>
             </div>
-            <div className="main_profileHeader">
-            <div className="main_profileHeader_user">
-                <h2 className="user_name">Tahiro Nakamatsu</h2>
-                <div className="user_status">Profile status</div>
-            </div>
-            <div className="main_profileHeader_editProfile">
-                <button className="editProfile_button ">
-                {" "}
+            <div className="myPage_profileItem_buttons">
+                <button className="buttons_editProfile">
                 Редактировать профиль
                 </button>
-                <button className="editProfile_button">
+                <button className="buttons_editProfile">
                 Поделиться
                 </button>
             </div>
             </div>
-
-            </MyPageWrap>
-            </>         
+            </div>
+            </MyPageWrap>  
         )
     }
 }
-
-{/* <div className="main_profile_block" >
-<img
-  className="main_backgroundProf"
-  src="https://gamerwall.pro/uploads/posts/2021-11/1637896192_2-gamerwall-pro-p-oboi-na-rabochii-stol-art-priroda-oboi-na-2.jpg"
-  alt="photo1"
-></img>
-<div className="main_wrap_avatar">
-  <img
-    className="main_item_avatar"
-    src="https://i.pinimg.com/originals/49/67/8e/49678e2e351debba4814d109532a2b81.png"
-    alt="avatar"
-  />
-</div>
-<div className="main_profileHeader">
-  <div className="main_profileHeader_user">
-    <h2 className="user_name">Tahiro Nakamatsu</h2>
-    <div className="user_status">Profile status</div>
-  </div>
-  <div className="main_profileHeader_editProfile">
-    <button className="editProfile_button ">
-      {" "}
-      Редактировать профиль
-    </button>
-    <button className="editProfile_button editProfile_button_more">
-      {" "}
-      Ещё <span className="more_arrow">↓</span>
-    </button>
-  </div>
-</div>
-</div> */}
-
