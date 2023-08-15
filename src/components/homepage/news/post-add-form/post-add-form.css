@@ -1,6 +1,6 @@
 .postAddForm-wrapper{
     margin: 20px auto;
-    width: 738px;
+    width: 780px;
     height: 193px;
     border-radius: 10px;
     background: #F1F1F1;
@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 .postAddForm-item{
-    width: 709px;
+    width: 750px;
     height: 117px;
     border-radius: 10px;
     background: #FFF;
@@ -16,36 +16,33 @@
 }
 .postAddForm-item-inputText{
     margin-left: 5px;
-    width: 690px;
-    height: 40px;
+    width: 735px;
+    min-height: 40px;
     margin-bottom: 30px;
     border-radius: 10px;
     border:1px solid transparent;
     font-size: 14px;
     overflow: scroll;
     outline: none;
-
 }
 .postAddForm-item-addContent-wrap{
-    width: 706px;
+    width: 250px;
     height: 40px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: start;
-    
 }
 .postAddForm-item-addContent-item-img{
     display: none;
 }
 .postAddForm-addPost-wrap-button{
     margin-top: -10px;
-    width: 720px;
+    width: 760px;
     height: 40px;
     display: flex;
     justify-content: end;
     align-items:center;
-   
 }
 .postAddForm-addPost-item-button{
     width: 102px;
@@ -55,5 +52,4 @@
     border-radius:10px;
     border:0px solid transparent;
     cursor: pointer;
-
 }

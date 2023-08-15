@@ -4,6 +4,8 @@ import SearchDialog from "./serch-dialogs/search-dialogs";
 import styled from "styled-components";
 
 const MessagesWrap = styled.div`
+  margin-top:20px;
+  border-radius:10px;
   width: 1000px;
   height: 705px;
   border: 1px solid #e4e4e4;
@@ -13,6 +15,7 @@ const MessagesWrap = styled.div`
 const SelectDialogWrap = styled.div`
   width: 300px;
   min-height: 705px;
+  border-radius:10px;
   border: 1px solid #e4e4e4;
   overflow: scroll;
 `;

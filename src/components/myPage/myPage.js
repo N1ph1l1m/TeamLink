@@ -1,6 +1,7 @@
 import React  , {Component}from "react";
 import styled from "styled-components";
 import Todo from "../homepage/todo";
+import  PostAddForm from '../homepage/news/post-add-form/post-add-form'
 import './myPage.css'
 import avatar from '../../routes/img/samurai.png'
 import cover from '../../routes/img/cover.jpg'
@@ -8,7 +9,7 @@ import cover from '../../routes/img/cover.jpg'
 
 
 const MyPageMainWrap = styled.div`
- max-width: 1100px;
+    max-width: 1100px;
     height: auto;
     display: flex;
     flex-wrap: nowrap;
@@ -26,13 +27,12 @@ const MyPageMainWrap = styled.div`
 const MyPageWrap = styled.div`
      width: 800px;
      min-height: 1000px;
-
     color: rgb(12, 11, 11);
 
 `
 
 const MyPageHeader = styled.div`
-    margin:10px auto;
+    margin:20px auto;
     width:780px;
     background-color: white;
     border-radius: 10px;
@@ -78,11 +78,7 @@ export default class MyPage extends Component{
                         </div>
                     </div>  
                 </MyPageHeader>
-                <MyPagePostAdd>
-                    <div className="postAddItem">
-
-                    </div>
-                </MyPagePostAdd>
+                <PostAddForm/>
             </MyPageWrap>
             <Todo/>
          </MyPageMainWrap>

@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 
 const HomePageWrap = styled.div`
- max-width: 1100px;
+    max-width: 1100px;
     height: auto;
     display: flex;
     flex-wrap: nowrap;
