@@ -39,13 +39,6 @@ const MyPageHeader = styled.div`
     height: 300px;
     border: 1px solid #e4e4e4;
 `;
-const MyPagePostAdd = styled.div`
-margin:10px auto;
-width:780px;
-height:80px;
-border:1px solid red;
-border-radius:10px;
-`
 
 
 export default class MyPage extends Component{
@@ -82,10 +75,7 @@ export default class MyPage extends Component{
             </MyPageWrap>
             <Todo/>
          </MyPageMainWrap>
-            
-    
-                
-        
+
         )
     }
 }
