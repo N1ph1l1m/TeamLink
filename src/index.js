@@ -45,7 +45,6 @@ const AppWrap = styled.div`
                 justify-content:center;
                 flex-direction: row;
                 flex-wrap: nowrap;
-               
                 `
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

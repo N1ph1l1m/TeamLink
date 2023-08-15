@@ -10,7 +10,6 @@ const HomePageWrap = styled.div`
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    /* border: 3px solid purple; */    
 `;
 
 export default class HomePage extends Component{
