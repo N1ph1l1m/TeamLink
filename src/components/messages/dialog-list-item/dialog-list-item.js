@@ -7,7 +7,6 @@ const ListItem = styled.div`
     position:absolute;
     width:280px;
     height:70px;
-    ${'' /* border:1px solid red; */}
     top:5px;
     left:8px;
     display:flex;

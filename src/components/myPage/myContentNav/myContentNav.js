@@ -1,15 +1,16 @@
 import React , {Component} from "react";
-import './myContentNav.css';
+import Followers from "../followers";
 import styled from "styled-components";
 //import { Outlet } from "react-router-dom";
+
 const ContentNav = styled.div`
     margin:0px auto;
     width:780px;
-    height:auto;
+    min-height:800px;
     border:1px solid #e4e4e4;
     border-radius:10px;
     display:flex;
-    flex-direction: row; 
+    flex-direction: column; 
 `
 
 const NavWrap = styled.div`
@@ -37,31 +38,38 @@ const NavItem = styled.div`
   }
 
 `;
-
+const NavButton = styled.div`
+    color:#3486eb;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border:0px solid transparent;
+    background-color:transparent;
+    &:hover{
+        cursor: pointer;
+    }
+`
 export default class MyContentNav extends Component{
     render(){
         return (
           <ContentNav>
             <NavWrap>
               <NavItem>
-                <button className="contentNav_button">Followers</button>
+                <NavButton>Followers</NavButton>
               </NavItem>
               <NavItem>
-                <button className="contentNav_button">
-                  Likes
-                </button>
+                <NavButton>Likes</NavButton>
               </NavItem>
               <NavItem>
-                <button className="contentNav_button">
-                  Posts
-                </button>
+                <NavButton>Posts</NavButton>
               </NavItem>
               <NavItem>
-                <button className="contentNav_button">
-                  Photos
-                </button>
+                <NavButton>Photos</NavButton>
               </NavItem>
             </NavWrap>
+            <Followers/>
           </ContentNav>
         );
     }
