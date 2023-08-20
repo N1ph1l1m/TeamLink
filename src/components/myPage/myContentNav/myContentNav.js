@@ -1,14 +1,13 @@
 import React , {Component} from "react";
 import './myContentNav.css';
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 //import { Outlet } from "react-router-dom";
 const ContentNav = styled.div`
     margin:0px auto;
     width:780px;
+    height:auto;
     border:1px solid #e4e4e4;
     border-radius:10px;
-    height:100%;
     display:flex;
     flex-direction: row; 
 `
@@ -18,6 +17,7 @@ width:780px;
 height:40px;
 display: flex;
 flex-direction: row;
+border-radius:10px;
 border-bottom:3px solid #e4e4e4;
 z-index:1;
 `
@@ -35,35 +35,34 @@ const NavItem = styled.div`
     margin-left:10px;
     border-bottom:3px solid #3486eb;
   }
+
 `;
 
 export default class MyContentNav extends Component{
     render(){
-        return(
-            <ContentNav>
-                <NavWrap>
-                    <NavItem>
-                        <Link to="/profile" className="contentNav_text">
-                        Followers
-                        </Link>
-                    </NavItem>
-                    <NavItem>
-                        <Link to="/profile" className="contentNav_text">
-                        Likes
-                        </Link>
-                    </NavItem>
-                    <NavItem>
-                        <Link to="/profile" className="contentNav_text">
-                        Posts
-                        </Link>
-                    </NavItem>
-                    <NavItem>
-                        <Link to="/profile" className="contentNav_text">
-                        Photos
-                        </Link>
-                    </NavItem>
-                </NavWrap>
-            </ContentNav>
-        )
+        return (
+          <ContentNav>
+            <NavWrap>
+              <NavItem>
+                <button className="contentNav_button">Followers</button>
+              </NavItem>
+              <NavItem>
+                <button className="contentNav_button">
+                  Likes
+                </button>
+              </NavItem>
+              <NavItem>
+                <button className="contentNav_button">
+                  Posts
+                </button>
+              </NavItem>
+              <NavItem>
+                <button className="contentNav_button">
+                  Photos
+                </button>
+              </NavItem>
+            </NavWrap>
+          </ContentNav>
+        );
     }
 }
