@@ -1,6 +1,7 @@
 import React  , {Component}from "react";
 import styled from "styled-components";
 import Todo from "../homepage/todo";
+import MyContentNav from "./myContentNav/myContentNav";
 import  PostAddForm from '../homepage/news/post-add-form/post-add-form'
 import './myPage.css'
 import avatar from '../../routes/img/samurai.png'
@@ -28,7 +29,6 @@ const MyPageWrap = styled.div`
      width: 800px;
      min-height: 1000px;
     color: rgb(12, 11, 11);
-
 `
 
 const MyPageHeader = styled.div`
@@ -72,6 +72,7 @@ export default class MyPage extends Component{
                     </div>  
                 </MyPageHeader>
                 <PostAddForm/>
+                <MyContentNav/>
             </MyPageWrap>
             <Todo/>
          </MyPageMainWrap>
