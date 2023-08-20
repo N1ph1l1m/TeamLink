@@ -62,10 +62,10 @@ export default class MyPage extends Component{
                             </div>
                             <div className="myPage_profileItem_buttons">
                                 <button className="buttons_editProfile">
-                                Редактировать профиль
+                                Edit profile
                                 </button>
                                 <button className="buttons_editProfile">
-                                Поделиться
+                                Share
                                 </button>
                             </div>
                         </div>

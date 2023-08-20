@@ -77,8 +77,8 @@
     border-radius: 10px;
     z-index: 1;
     display: flex;
-    justify-content:space-around;
     align-items:center;
+    
 
   }
   .myPage_profile_Avatar {
@@ -87,14 +87,15 @@
     border-radius: 50%;
     border: 3px solid rgb(255, 255, 255);
     margin-top: -70px;
+    margin-left: 8px;
   }
 
   .myPage_profileItem{
-    width: 780px;
+    width: 700px;
     display: flex;
     justify-content: space-between;
     align-items:center;
-
+    margin-left: 10px;
   }
   .myPage_profileItem_user {
     height: 100px;
@@ -110,10 +111,10 @@
     align-items:center;
   }
   .buttons_editProfile {
-    width: 130px;
+    width: 120px;
     height: 40px;
     margin-right: 10px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 900;
     border-radius: 10px;
     color:#3486eb;

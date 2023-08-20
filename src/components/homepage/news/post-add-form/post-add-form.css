@@ -45,11 +45,13 @@
     align-items:center;
 }
 .postAddForm-addPost-item-button{
-    width: 102px;
-    height: 35px;
-    background: #150AA1;
-    color:white;
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 900;
+    background-color:white;
+    color:#3486eb;
     border-radius:10px;
-    border:0px solid transparent;
+    border: 1px solid #e4e4e4;
     cursor: pointer;
 }

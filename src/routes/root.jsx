@@ -30,21 +30,21 @@ export default function Root() {
           <NavWrap>
             <img src={user} alt="user" className="navBar_list_block_img"></img>
             <Link to="/profile" className="navBar_list_block_text">
-              Моя страница
+              My profile 
             </Link>
           </NavWrap>
 
           <NavWrap>
             <img src={news} alt="user" className="navBar_list_block_img"></img>
             <Link to="/news" className="navBar_list_block_text">
-              Новости
+              News
             </Link>
           </NavWrap>
 
           <NavWrap>
             <img src={tasks} alt="user" className="navBar_list_block_img"></img>
             <Link to="/" className="navBar_list_block_text">
-              Задачи
+              Tasks
             </Link>
           </NavWrap>
 
@@ -55,7 +55,7 @@ export default function Root() {
               className="navBar_list_block_img"
             ></img>
             <Link to="/message" className="navBar_list_block_text">
-              Сообщения
+              Messenger
             </Link>
           </NavWrap>
 
@@ -66,7 +66,7 @@ export default function Root() {
               className="navBar_list_block_img"
             ></img>
             <Link to="/" className="navBar_list_block_text">
-              Уведомления
+              Notification
             </Link>
           </NavWrap>
 
@@ -77,20 +77,20 @@ export default function Root() {
               className="navBar_list_block_img"
             ></img>
             <Link to="/" className="navBar_list_block_text">
-              Календарь
+              Calendar
             </Link>
           </NavWrap>
 
           <NavWrap>
             <img src={docs} alt="user" className="navBar_list_block_img"></img>
             <Link to="/" className="navBar_list_block_text">
-              Документы
+              Documents
             </Link>
           </NavWrap>
           <NavWrap>
             <img src={groups} alt="/" className="navBar_list_block_img"></img>
             <Link to="/" className="navBar_list_block_text">
-              Группы
+              Communities
             </Link>
           </NavWrap>
         </div>
