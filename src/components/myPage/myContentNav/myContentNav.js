@@ -1,5 +1,6 @@
 import React , {Component} from "react";
 import Followers from "../followers";
+import News from "../../homepage/news/news";
 import styled from "styled-components";
 //import { Outlet } from "react-router-dom";
 
@@ -51,6 +52,20 @@ const NavButton = styled.div`
         cursor: pointer;
     }
 `
+const NewsWrap = styled.div`
+  width:770px;
+  height:auto;
+  margin:0px auto;
+  margin-bottom:10px;
+`
+const FollowersComponent = (
+  <Followers/>
+)
+const NewsComponent  = (
+    <NewsWrap>
+      <News/>
+    </NewsWrap>
+);
 export default class MyContentNav extends Component{
     render(){
         return (
@@ -69,7 +84,8 @@ export default class MyContentNav extends Component{
                 <NavButton>Photos</NavButton>
               </NavItem>
             </NavWrap>
-            <Followers/>
+          {FollowersComponent}
+          {/* {NewsComponent} */}
           </ContentNav>
         );
     }

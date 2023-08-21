@@ -3,7 +3,7 @@ import PostListItem from "../post-list-item/post-list-item";
 import styled from 'styled-components'
 
 const PostList = styled.div`
-        width: 780px;
+        max-width: 780px;
         min-height: 200px;
         border-radius: 10px;
         background: #F1F1F1;
@@ -21,6 +21,7 @@ export default class Postlist extends Component{
         return(
             <PostList>
                 <PostListItem/>
+
             </PostList>
         )
     }

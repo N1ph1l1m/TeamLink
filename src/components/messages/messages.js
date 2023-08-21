@@ -7,7 +7,7 @@ const MessagesWrap = styled.div`
   margin-top:20px;
   border-radius:10px;
   width: 1000px;
-  height: 705px;
+  min-height: 705px;
   border: 1px solid #e4e4e4;
   color: rgb(12, 11, 11);
   display: flex;
@@ -29,6 +29,7 @@ export default class Messages extends Component {
       <MessagesWrap>
         <SelectDialogWrap>
           <SearchDialog />
+          <DialogList />
           <DialogList />
           <DialogList />
           <DialogList />

@@ -60,6 +60,13 @@ export default function Root() {
           </NavWrap>
 
           <NavWrap>
+            <img src={groups} alt="/" className="navBar_list_block_img"></img>
+            <Link to="/" className="navBar_list_block_text">
+              Communities
+            </Link>
+          </NavWrap>
+          
+          <NavWrap>
             <img
               src={notification}
               alt="user"
@@ -87,12 +94,7 @@ export default function Root() {
               Documents
             </Link>
           </NavWrap>
-          <NavWrap>
-            <img src={groups} alt="/" className="navBar_list_block_img"></img>
-            <Link to="/" className="navBar_list_block_text">
-              Communities
-            </Link>
-          </NavWrap>
+       
         </div>
         <div  className="outlet_Block"id="detail">
           <Outlet />

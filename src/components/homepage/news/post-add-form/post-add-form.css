@@ -1,6 +1,6 @@
 .postAddForm-wrapper{
     margin: 20px auto;
-    width: 780px;
+    max-width: 780px;
     height: 193px;
     border-radius: 10px;
     background: #F1F1F1;
