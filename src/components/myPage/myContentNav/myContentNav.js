@@ -1,6 +1,7 @@
 import React , {Component} from "react";
 import Followers from "../followers";
 import News from "../../homepage/news/news";
+import Photos from "../photos /photos";
 import styled from "styled-components";
 //import { Outlet } from "react-router-dom";
 
@@ -66,6 +67,15 @@ const NewsComponent  = (
       <News/>
     </NewsWrap>
 );
+
+const PhotosComponent  = (
+  <Photos/> 
+);
+
+
+
+
+
 export default class MyContentNav extends Component{
     render(){
         return (
@@ -84,8 +94,9 @@ export default class MyContentNav extends Component{
                 <NavButton>Photos</NavButton>
               </NavItem>
             </NavWrap>
-          {FollowersComponent}
+          {/* {FollowersComponent} */}
           {/* {NewsComponent} */}
+          {PhotosComponent}
           </ContentNav>
         );
     }
