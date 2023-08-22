@@ -10,7 +10,7 @@ export default class PhotosForm extends Component{
     render(){
         return(
             <PhotosFormWrap>
-
+                
             </PhotosFormWrap>
         )
     }

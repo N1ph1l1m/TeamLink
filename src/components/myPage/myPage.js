@@ -42,7 +42,19 @@ const MyPageHeader = styled.div`
 
 
 export default class MyPage extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            name:'Peter',
+            surname:'Parker',
+            status: 'This my first status',
+        }
+    }
     render(){
+        const name = this.state.name,
+         surname = this.state.surname,
+         status = this.state.status;
+
         return(
          <MyPageMainWrap>
             <MyPageWrap>
@@ -57,8 +69,8 @@ export default class MyPage extends Component{
                             alt="avatar"/>
                         <div className="myPage_profileItem">
                             <div className="myPage_profileItem_user">
-                                <h2 className="user_name">Piter Parker</h2>
-                                <span className="user_status">Profile status</span>
+                                <h2 className="user_name">{name} {surname}</h2>
+                                <span className="user_status">{status}</span>
                             </div>
                             <div className="myPage_profileItem_buttons">
                                 <button className="buttons_editProfile">

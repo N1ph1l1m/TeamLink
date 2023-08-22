@@ -3,7 +3,6 @@ import Followers from "../followers";
 import News from "../../homepage/news/news";
 import Photos from "../photos /photos";
 import styled from "styled-components";
-//import { Outlet } from "react-router-dom";
 
 const ContentNav = styled.div`
     margin:0px auto;
@@ -24,7 +23,7 @@ border-radius:10px;
 border-bottom:3px solid #e4e4e4;
 z-index:1;
 `
-
+//   border-bottom:3px solid #3486eb;
 const NavItem = styled.div`
   margin-top:10px;
   height: 30px;
@@ -36,7 +35,6 @@ const NavItem = styled.div`
   &:first-child{
     margin-right:40px;
     margin-left:10px;
-    border-bottom:3px solid #3486eb;
   }
 
 `;
@@ -52,37 +50,29 @@ const NavButton = styled.div`
     &:hover{
         cursor: pointer;
     }
-`
+// `
 const NewsWrap = styled.div`
   width:770px;
   height:auto;
   margin:0px auto;
   margin-bottom:10px;
 `
-const FollowersComponent = (
-  <Followers/>
-)
-const NewsComponent  = (
-    <NewsWrap>
-      <News/>
-    </NewsWrap>
-);
-
-const PhotosComponent  = (
-  <Photos/> 
-);
-
-
-
-
-
 export default class MyContentNav extends Component{
+
+  constructor(props){
+    super(props);
+    this.state = {
+        show:0,
+    
+    }
+}
+
     render(){
         return (
           <ContentNav>
             <NavWrap>
               <NavItem>
-                <NavButton>Followers</NavButton>
+                <NavButton onClick={this.showFolow}>Followers</NavButton>
               </NavItem>
               <NavItem>
                 <NavButton>Likes</NavButton>
@@ -94,9 +84,7 @@ export default class MyContentNav extends Component{
                 <NavButton>Photos</NavButton>
               </NavItem>
             </NavWrap>
-          {/* {FollowersComponent} */}
-          {/* {NewsComponent} */}
-          {PhotosComponent}
+          
           </ContentNav>
         );
     }

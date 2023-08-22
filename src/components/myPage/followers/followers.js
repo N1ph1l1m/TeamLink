@@ -16,6 +16,12 @@ export default class Followers extends Component{
                 <FollowersItem/>
                 <FollowersItem/>
                 <FollowersItem/>
+                <FollowersItem/>
+                <FollowersItem/>
+                <FollowersItem/>
+                <FollowersItem/>
+                <FollowersItem/>
+                <FollowersItem/>
             
             </FollowersWrap>
         )
