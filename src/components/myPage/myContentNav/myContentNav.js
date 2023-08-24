@@ -1,7 +1,7 @@
 import React , {Component} from "react";
 import Followers from "../followers";
 import News from "../../homepage/news/news";
-import Photos from "../photos /photos";
+//import Photos from "../photos /photos";
 import styled from "styled-components";
 
 const ContentNav = styled.div`
@@ -57,18 +57,52 @@ const NewsWrap = styled.div`
   margin:0px auto;
   margin-bottom:10px;
 `
+
+
+
 export default class MyContentNav extends Component{
 
   constructor(props){
     super(props);
     this.state = {
         show:0,
-    
     }
+     this.showFolow = this.showFolow.bind(this);
+     this.showPost = this.showPost.bind(this);
 }
 
-    render(){
-        return (
+ showFolow(){
+    this.setState(prevState =>({
+      show: prevState = 0
+    }));
+  }
+  showPost(){
+    this.setState(prevState =>({
+      show: prevState = 2
+    }));
+  }
+  showElements = () => {
+    if(this.state.show === 0){
+      return(
+      <Followers/>
+      )
+
+    }else if(this.state.show === 2 ){
+      return(
+        <NewsWrap>
+            <News/>
+        </NewsWrap>
+    
+
+     
+      )
+     
+    }
+  }
+
+  render(){
+    const show = this.showElements();
+    return (
           <ContentNav>
             <NavWrap>
               <NavItem>
@@ -78,14 +112,14 @@ export default class MyContentNav extends Component{
                 <NavButton>Likes</NavButton>
               </NavItem>
               <NavItem>
-                <NavButton>Posts</NavButton>
+                <NavButton onClick={this.showPost}> Posts</NavButton>
               </NavItem>
               <NavItem>
                 <NavButton>Photos</NavButton>
               </NavItem>
             </NavWrap>
-          
+          {show}
           </ContentNav>
         );
-    }
+  }
 }
