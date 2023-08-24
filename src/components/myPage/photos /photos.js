@@ -15,6 +15,7 @@ export default class Photos extends Component{
     render(){
         return(
             <PhotosWrap>
+                <h1>Photos</h1>
                 <PhotosForm/>
             </PhotosWrap>
         )

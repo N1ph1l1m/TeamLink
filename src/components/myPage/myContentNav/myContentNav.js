@@ -1,8 +1,9 @@
 import React , {Component} from "react";
 import Followers from "../followers";
 import News from "../../homepage/news/news";
-//import Photos from "../photos /photos";
+import Likes from "../likes/likes";
 import styled from "styled-components";
+import Photos from "../photos /photos";
 
 const ContentNav = styled.div`
     margin:0px auto;
@@ -13,7 +14,6 @@ const ContentNav = styled.div`
     display:flex;
     flex-direction: column; 
 `
-
 const NavWrap = styled.div`
 width:780px;
 height:40px;
@@ -57,46 +57,61 @@ const NewsWrap = styled.div`
   margin:0px auto;
   margin-bottom:10px;
 `
-
-
-
 export default class MyContentNav extends Component{
 
   constructor(props){
     super(props);
     this.state = {
-        show:0,
+        show:1,
     }
      this.showFolow = this.showFolow.bind(this);
-     this.showPost = this.showPost.bind(this);
+     this.showLikes = this.showLikes.bind(this);
+     this.showNews = this.showNews.bind(this);
+     this.showPhotos = this.showPhotos.bind(this);
 }
 
  showFolow(){
-    this.setState(prevState =>({
-      show: prevState = 0
+    this.setState(numItem =>({
+      show: numItem = 1
     }));
   }
-  showPost(){
-    this.setState(prevState =>({
-      show: prevState = 2
+  showLikes(){
+    this.setState(numItem =>({
+      show: numItem = 2 
+    }))
+  }
+  showNews(){
+    this.setState(numItem =>({
+      show: numItem = 3
     }));
   }
+  showPhotos(){
+    this.setState(numItem =>({
+      show: numItem = 4
+    }));
+  }
+
   showElements = () => {
-    if(this.state.show === 0){
+    if(this.state.show === 1){
       return(
       <Followers/>
       )
-
-    }else if(this.state.show === 2 ){
+    }else if(this.state.show === 2){
+      return(
+        <Likes/>
+      )
+    }
+    else if(this.state.show === 3){
       return(
         <NewsWrap>
             <News/>
         </NewsWrap>
-    
-
-     
       )
-     
+    }
+    else if(this.state.show === 4){
+      return(
+        <Photos/>
+      )
     }
   }
 
@@ -106,16 +121,16 @@ export default class MyContentNav extends Component{
           <ContentNav>
             <NavWrap>
               <NavItem>
-                <NavButton onClick={this.showFolow}>Followers</NavButton>
+                <NavButton onClick={this.showFolow}> Followers </NavButton>
               </NavItem>
               <NavItem>
-                <NavButton>Likes</NavButton>
+                <NavButton onClick={this.showLikes}> Likes </NavButton>
               </NavItem>
               <NavItem>
-                <NavButton onClick={this.showPost}> Posts</NavButton>
+                <NavButton onClick={this.showNews}> Posts </NavButton>
               </NavItem>
               <NavItem>
-                <NavButton>Photos</NavButton>
+                <NavButton onClick={this.showPhotos}>Photos</NavButton>
               </NavItem>
             </NavWrap>
           {show}
