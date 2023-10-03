@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import TaskBlock from "./task_block";
 
 import styled from 'styled-components'
@@ -10,7 +10,7 @@ const TodoWR = styled.div`
 
 
 
-export default class Todo extends Component{
+export default class Todo extends React.Component{
    render(){
     return(
       <TodoWR>

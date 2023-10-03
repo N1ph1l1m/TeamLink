@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React  from "react";
 import "./post-list-item.css";
 
 //img
@@ -8,7 +8,7 @@ import like from "./img/heart.png";
 import comments from "./img/comments.png";
 import repost from "./img/repost.png";
 
-export default class PostListItem extends Component {
+export default class PostListItem extends React.Component {
   render() {
     return (
       <>

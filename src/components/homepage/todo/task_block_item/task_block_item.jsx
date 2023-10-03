@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-pascal-case */
-import React , {Component}from "react";
+import React  from "react";
 import "./task_block_item.css"
 import styled from 'styled-components'
 
@@ -10,7 +10,7 @@ const TaskBlockITem_wr = styled.div`
         box-sizing: border-box;
     `
 
-export default  class TaskBlockItem  extends Component{
+export default  class TaskBlockItem  extends React.Component{
     render (){
         return(
             <TaskBlockITem_wr>

@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React  from "react";
 import styled from 'styled-components'
 import PostAddForm from "./post-add-form/post-add-form";
 import Postlist from "./post-list";
@@ -10,7 +10,7 @@ const NewsWrap = styled.div`
 
     `
 
-export default class News extends Component{
+export default class News extends React.Component{
    render(){
     return(
       <NewsWrap>

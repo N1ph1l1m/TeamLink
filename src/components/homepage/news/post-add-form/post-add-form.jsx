@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./post-add-form.css";
 import styled from "styled-components";
 //img
@@ -17,7 +17,7 @@ const IconInput = styled.div`
 
 `;
 
-export default class PostAddForm extends Component {
+export default class PostAddForm extends React.Component {
   render() {
     return (
       <div className="postAddForm-wrapper">

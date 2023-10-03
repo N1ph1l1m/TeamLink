@@ -1,4 +1,4 @@
-import React , {Component}from "react";
+import React  from "react";
 import PostListItem from "../post-list-item/post-list-item";
 import styled from 'styled-components'
 
@@ -16,7 +16,7 @@ const PostList = styled.div`
         margin-bottom: 15px;
     `
 
-export default class Postlist extends Component{
+export default class Postlist extends React.Component{
     render(){
         return(
             <PostList>

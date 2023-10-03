@@ -1,4 +1,4 @@
-import React , {Component} from "react";
+import React from "react";
 import "./dialog-list-item.css"
 import styled from 'styled-components'
 import logo from "../../../routes/./img/logo.png"
@@ -13,7 +13,7 @@ const ListItem = styled.div`
     justify-content:center;
 `
 
-export default class DialogListItem extends  Component{
+export default class DialogListItem extends  React.Component{
     render(){
         return(
             <ListItem>

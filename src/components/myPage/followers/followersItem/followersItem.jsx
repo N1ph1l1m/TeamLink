@@ -1,4 +1,4 @@
-import React, {Component }from "react";
+import React from "react";
 import styled from "styled-components";
 import logo from "../../../../router/../routes/img/logo.png"
 import "./followersItem.css"
@@ -14,7 +14,7 @@ flex-flow:row nowrap;
 align-item:center;
 `
 
-export default class FollowerItem extends Component{
+export default class FollowerItem extends React.Component{
     render(){
         return(
         <FollowersWrap>

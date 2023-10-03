@@ -1,4 +1,4 @@
-import React  , {Component}from "react";
+import React from "react";
 import styled from "styled-components";
 import Todo from "../homepage/todo";
 import MyContentNav from "./myContentNav/myContentNav";
@@ -41,7 +41,7 @@ const MyPageHeader = styled.div`
 `;
 
 
-export default class MyPage extends Component{
+export default class MyPage extends React.Component{
     constructor(props){
         super(props);
         this.state = {

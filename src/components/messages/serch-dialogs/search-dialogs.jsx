@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./search-dialogs.css";
 import styled from "styled-components";
 import search from "./icons/search.png";
@@ -25,7 +25,7 @@ const SearchWrap = styled.div`
   }
 `;
 
-export default class SearchDialog extends Component {
+export default class SearchDialog extends React.Component {
   render() {
     return (
       <SearchWrap>

@@ -1,4 +1,4 @@
-import React, {Component }from "react";
+import React from "react";
 import styled from "styled-components";
 import FollowersItem from "./followersItem/followersItem";
 
@@ -8,7 +8,7 @@ min-height:800px;
 display:flex;
 flex-flow: column nowrap;
 `
-export default class Followers extends Component{
+export default class Followers extends React.Component{
     render(){
         return(
             <FollowersWrap>

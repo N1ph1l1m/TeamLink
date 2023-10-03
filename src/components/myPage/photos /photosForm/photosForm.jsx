@@ -1,4 +1,4 @@
-import React , {Component} from "react";
+import React from "react";
 import styled from "styled-components";
 import PhotoItem from "./photoItem";
 
@@ -10,7 +10,7 @@ display:flex;
 flex-flow: row wrap;
 justify-content: center;
 `
-export default class PhotosForm extends Component{
+export default class PhotosForm extends React.Component{
     render(){
         return(
             <PhotosFormWrap>

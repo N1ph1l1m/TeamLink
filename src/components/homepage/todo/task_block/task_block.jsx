@@ -1,4 +1,4 @@
-import React , {Component} from "react";
+import React  from "react";
 import TaskBlockItem from "../task_block_item/task_block_item";
 import styled from 'styled-components'
 
@@ -16,7 +16,7 @@ const TaskBlockWR = styled.div`
     `
     
 
-export default class TaskBlock extends Component{
+export default class TaskBlock extends React.Component{
     render(){
         return(
            <TaskBlockWR>

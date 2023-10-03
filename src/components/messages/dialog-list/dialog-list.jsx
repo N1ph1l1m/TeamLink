@@ -1,4 +1,4 @@
-import React , {Component} from "react";
+import React from "react";
 import styled from 'styled-components'
 import DialogListItem from "../dialog-list-item/dialog-list-item";
 
@@ -31,7 +31,7 @@ const DialogListWrap = styled.div`
     }
     `
 
-export default class DialogList extends  Component{
+export default class DialogList extends  React.Component{
     render(){
         return(
            <DialogListWrap>

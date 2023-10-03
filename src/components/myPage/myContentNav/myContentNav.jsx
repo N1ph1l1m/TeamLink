@@ -1,4 +1,4 @@
-import React , {Component} from "react";
+import React from "react";
 import Followers from "../followers";
 import News from "../../homepage/news/news";
 import Likes from "../likes/likes";
@@ -57,7 +57,7 @@ const NewsWrap = styled.div`
   margin:0px auto;
   margin-bottom:10px;
 `
-export default class MyContentNav extends Component{
+export default class MyContentNav extends React.Component{
 
   constructor(props){
     super(props);
