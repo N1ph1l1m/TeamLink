@@ -4,8 +4,6 @@ import PhotosForm from "./photosForm/photosForm";
 
 const PhotosWrap = styled.div`
 width:780px;
-display:flex;
-flex-flow: row wrap;
 `
 
 export default class Photos extends Component{
