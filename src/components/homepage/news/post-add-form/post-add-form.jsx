@@ -15,7 +15,7 @@ const IconInput = styled.div`
   cursor: pointer;
 
 `;
-const PostAddFormWrapper = styled.div`
+const PostAddFormWrapper = styled.form`
    margin: 20px auto;
     max-width: 780px;
     height: 193px;
@@ -74,13 +74,44 @@ const AddPostItemButton = styled.button`
 `
 
 export default class PostAddForm extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: "",
+    };
+    this.onValueChange = this.onValueChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+  }
+  onValueChange(e) {
+    this.setState({
+      text: e.target.value,
+    });
+  }
+  onSubmit(e) {
+    e.preventDefault();
+    if (this.state.text.trim() !== "") {
+     // this.props.onAdd(this.state.text);
+      this.setState({
+        text: "",
+      });
+      console.log(this.state.text);
+    }
+  }
+
+
+
+
   render() {
     return (
-      <PostAddFormWrapper>
+      <PostAddFormWrapper 
+          onSubmit={this.onSubmit}
+          >
         <PostAddFormItem>
           <ItemInputText
             type="text"
             placeholder="What are you thinking about now"
+            onChange={this.onValueChange}
           />
           <ItemAddContentWrap>
             
@@ -139,7 +170,10 @@ export default class PostAddForm extends React.Component {
           </ItemAddContentWrap>
         </PostAddFormItem>
         <AddPostWrapButton>
-          <AddPostItemButton>Post</AddPostItemButton>
+          <AddPostItemButton
+            type="submit"
+            onChange={this.onSubmit}
+        >Post</AddPostItemButton>
         </AddPostWrapButton>
       </PostAddFormWrapper>
     );
