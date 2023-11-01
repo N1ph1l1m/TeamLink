@@ -21,7 +21,6 @@ export default class Postlist extends React.Component{
         return(
             <PostList>
                 <PostListItem/>
-
             </PostList>
         )
     }

@@ -1,5 +1,4 @@
 import React from "react";
-import "./post-add-form.css";
 import styled from "styled-components";
 //img
 import img from "./img/img.png";
@@ -16,79 +15,133 @@ const IconInput = styled.div`
   cursor: pointer;
 
 `;
+const PostAddFormWrapper = styled.div`
+   margin: 20px auto;
+    max-width: 780px;
+    height: 193px;
+    border-radius: 10px;
+    background: #F1F1F1;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+`
+ const PostAddFormItem = styled.div`
+     width: 750px;
+    height: 117px;
+    border-radius: 10px;
+    background: #FFF;
+    margin: 16px auto;
+ `
+const ItemInputText = styled.input`
+ margin-left: 5px;
+    width: 735px;
+    min-height: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border:1px solid transparent;
+    font-size: 14px;
+    overflow: scroll;
+    outline: none;
+`
+const ItemAddContentWrap = styled.div`
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+`
+const AddContentItemIcon = styled.input`
+    display: none;
+`
+const AddPostWrapButton = styled.div`
+  margin-top: -10px;
+    width: 760px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+`
+const AddPostItemButton = styled.button`
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 900;
+    background-color:white;
+    color:#3486eb;
+    border-radius:10px;
+    border: 1px solid #e4e4e4;
+    cursor: pointer;
+`
 
 export default class PostAddForm extends React.Component {
   render() {
     return (
-      <div className="postAddForm-wrapper">
-        <div className="postAddForm-item">
-          <input
-            className="postAddForm-item-inputText"
+      <PostAddFormWrapper>
+        <PostAddFormItem>
+          <ItemInputText
             type="text"
             placeholder="What are you thinking about now"
           />
-          <div className="postAddForm-item-addContent-wrap">
+          <ItemAddContentWrap>
             
             <label for="fileInputImage">
               <IconInput>
                 <img src={img} alt="img"></img>
               </IconInput>
             </label>
-            <input
+
+            <AddContentItemIcon
               type="file"
               id="fileInputImage"
-              className="postAddForm-item-addContent-item-img"
-              accept="image/"></input>
+              accept="image/"></AddContentItemIcon>
 
             <label for="fileInputVideo">
               <IconInput>
                 <img src={video} alt="video"></img>
               </IconInput>
             </label>
-            <input
+
+            <AddContentItemIcon
               type="file"
               id="fileInputVideo"
-              className="postAddForm-item-addContent-item-img"
-              accept="video/"></input>
+              accept="video/"></AddContentItemIcon>
 
             <label for="fileInputMicrophone">
               <IconInput>
                 <img src={microphone} alt="microphone"></img>
               </IconInput>
             </label>
-            <input
+
+            <AddContentItemIcon
               type="file"
               id="fileInputMicrophone"
-              className="postAddForm-item-addContent-item-img"
-              accept="audio/"></input>
+              accept="audio/"></AddContentItemIcon>
 
             <label for="fileInputMusic">
               <IconInput>
                 <img src={music} alt="music"></img>
               </IconInput>
             </label>
-            <input
+            <AddContentItemIcon
               type="file"
               id="fileInputMusic"
-              className="postAddForm-item-addContent-item-img"
-              accept="audio/"></input>
+              accept="audio/"></AddContentItemIcon>
 
             <label for="fileInputDocs">
               <IconInput>
                 <img src={docs} alt="music"></img>
               </IconInput>
             </label>
-            <input
+            <AddContentItemIcon
               type="file"
-              id="fileInputDocs"
-              className="postAddForm-item-addContent-item-img"></input>
+              id="fileInputDocs"></AddContentItemIcon>
 
-          </div>
-        </div>
-        <div className="postAddForm-addPost-wrap-button">
-          <button className="postAddForm-addPost-item-button">Post</button>
-        </div>
-      </div>
+          </ItemAddContentWrap>
+        </PostAddFormItem>
+        <AddPostWrapButton>
+          <AddPostItemButton>Post</AddPostItemButton>
+        </AddPostWrapButton>
+      </PostAddFormWrapper>
     );
   }
 }

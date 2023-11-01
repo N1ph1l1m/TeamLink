@@ -16,8 +16,7 @@ export default class News extends React.Component{
       <NewsWrap>
         <PostAddForm/>
         <Postlist/>
-        <Postlist/>
-        <Postlist/>
+        <Postlist/> 
       
       </NewsWrap>
     )
