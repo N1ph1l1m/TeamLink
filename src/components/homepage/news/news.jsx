@@ -11,12 +11,27 @@ const NewsWrap = styled.div`
     `
 
 export default class News extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={
+      data:[
+        {label:"Texttt", liked:true,id:"1",comments:false}
+      ]
+    }
+  }
    render(){
+
+    //const visiblePosts = true;
     return(
       <NewsWrap>
         <PostAddForm/>
-        <Postlist/>
-        <Postlist/> 
+        {/* <Postlist 
+                posts={visiblePosts}
+          onDelete={this.deleteItem}
+          onToggleImportant={this.onToggleImportant}
+          onToggleLiked={this.onToggleLiked}
+        /> */}
+        
       
       </NewsWrap>
     )

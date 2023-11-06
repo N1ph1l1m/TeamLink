@@ -1,10 +1,10 @@
 import React  from "react";
 import styled from "styled-components";
 //img
-import logo from "./img/logo.png";
-import like from "./img/heart.png";
+import logoImg from "./img/logo.png";
+import likeImg from "./img/heart.png";
 //import heartRed from "./img/heartRed.png"
-import comments from "./img/comments.png";
+import commentsImg from "./img/comments.png";
 import repost from "./img/repost.png";
 
 const HeaderWrap = styled.div`
@@ -53,7 +53,7 @@ const HeaderTime = styled.span`
 const ContentWrap = styled.div`
   width: 700px;
   min-height: 100px;
-  margin-left: 15px;
+  margin-left: 30px;
 `
 const FooterWrap = styled.div`
   width: 777px;
@@ -84,15 +84,25 @@ const ButtonLabel = styled.span`
   font-weight: 500;
   line-height: normal;
 `
+const ContentText = styled.span`
+font-size:20px;
+text-align:justify;
+`
 
 export default class PostListItem extends React.Component {
   render() {
+    const {
+            label,
+            onToggleLiked,
+            onToggleComment,
+            onToggleRepost,
+          }=this.props;
     return (
       <>
         <HeaderWrap>
           <HeaderItem>
             <HeaderImg
-              src={logo}
+              src={logoImg}
               alt="logo user"></HeaderImg>
             <HeaderLabelWrap>
               <HeaderLabelName>Peter Parker</HeaderLabelName>
@@ -104,21 +114,25 @@ export default class PostListItem extends React.Component {
         </HeaderWrap>
 
        <ContentWrap>
-        
+        <ContentText>{label}</ContentText>
+       
        </ContentWrap>
 
         <FooterWrap>
           <FooterButton>
             <FooterButtonIcon 
-              src={like} 
-              alt="like" />
+              src={likeImg} 
+              alt="like"
+              onClick={onToggleLiked}
+              />
             <ButtonLabel>Нравится</ButtonLabel>
           </FooterButton>
 
           <FooterButton>
             <FooterButtonIcon
-              src={comments}
+              src={commentsImg}
               alt="like"
+              onClick={onToggleComment}
             />
             <ButtonLabel>Комментировать</ButtonLabel>
           </FooterButton>
@@ -126,7 +140,9 @@ export default class PostListItem extends React.Component {
           <FooterButton>
             <FooterButtonIcon 
               src={repost} 
-              alt="like" />
+              alt="like" 
+              onClick={onToggleRepost}
+              />
             <ButtonLabel>Поделиться</ButtonLabel>
           </FooterButton>
         </FooterWrap>

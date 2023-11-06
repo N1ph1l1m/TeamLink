@@ -91,17 +91,12 @@ export default class PostAddForm extends React.Component {
   onSubmit(e) {
     e.preventDefault();
     if (this.state.text.trim() !== "") {
-     // this.props.onAdd(this.state.text);
+     this.props.onAdd(this.state.text);
       this.setState({
         text: "",
       });
-      console.log(this.state.text);
     }
   }
-
-
-
-
   render() {
     return (
       <PostAddFormWrapper 
@@ -172,8 +167,7 @@ export default class PostAddForm extends React.Component {
         <AddPostWrapButton>
           <AddPostItemButton
             type="submit"
-            onChange={this.onSubmit}
-        >Post</AddPostItemButton>
+            onChange={this.onSubmit}>Post</AddPostItemButton>
         </AddPostWrapButton>
       </PostAddFormWrapper>
     );

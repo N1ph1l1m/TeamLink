@@ -1,8 +1,9 @@
 import React  from "react";
 import PostListItem from "../post-list-item/post-list-item";
+import { ListGroup } from "reactstrap";
 import styled from 'styled-components'
 
-const PostList = styled.div`
+const PostListBlock = styled.div`
         max-width: 780px;
         min-height: 200px;
         border-radius: 10px;
@@ -16,12 +17,20 @@ const PostList = styled.div`
         margin-bottom: 15px;
     `
 
-export default class Postlist extends React.Component{
-    render(){
-        return(
-            <PostList>
-                <PostListItem/>
-            </PostList>
-        )
-    }
-}
+    const PostList = ({ posts,onToggleLiked,onToggleComment,onToggleRepost})=>{
+        const elements = posts.map((item) => {
+            const{id, ...itemProps} = item;
+            return(
+                <PostListBlock key={id}>
+                    <PostListItem
+                        {...itemProps}
+                        onToggleLiked={()=>onToggleLiked(id)}
+                        onToggleComment={()=>onToggleComment(id)}
+                        onToggleRepost={()=>onToggleRepost(id)}
+                    />
+                </PostListBlock>
+            );
+        });
+        return <ListGroup className="app-list">{elements}</ListGroup>;
+    };
+    export default PostList;
