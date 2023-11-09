@@ -96,7 +96,7 @@ export default class PostListItem extends React.Component {
             onToggleLiked,
             onToggleComment,
             onToggleRepost,
-          }=this.props;
+          } = this.props;
     return (
       <>
         <HeaderWrap>
@@ -119,29 +119,28 @@ export default class PostListItem extends React.Component {
        </ContentWrap>
 
         <FooterWrap>
-          <FooterButton>
-            <FooterButtonIcon 
+          <FooterButton
+              onClick={onToggleLiked}>
+            <FooterButtonIcon  
               src={likeImg} 
-              alt="like"
-              onClick={onToggleLiked}
-              />
+              alt="like"/>
             <ButtonLabel>Нравится</ButtonLabel>
           </FooterButton>
 
-          <FooterButton>
+          <FooterButton
+          onClick={onToggleComment}>
             <FooterButtonIcon
               src={commentsImg}
               alt="like"
-              onClick={onToggleComment}
             />
             <ButtonLabel>Комментировать</ButtonLabel>
           </FooterButton>
 
-          <FooterButton>
+          <FooterButton
+           onClick={onToggleRepost}>
             <FooterButtonIcon 
               src={repost} 
               alt="like" 
-              onClick={onToggleRepost}
               />
             <ButtonLabel>Поделиться</ButtonLabel>
           </FooterButton>

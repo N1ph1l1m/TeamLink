@@ -71,6 +71,7 @@ const AddPostItemButton = styled.button`
     border-radius:10px;
     border: 1px solid #e4e4e4;
     cursor: pointer;
+    margin-right:5px;
 `
 
 export default class PostAddForm extends React.Component {
@@ -88,14 +89,18 @@ export default class PostAddForm extends React.Component {
       text: e.target.value,
     });
   }
+  // onSubmit(e) {
+  //   e.preventDefault();
+  //   if (this.state.text.trim() !== "") {
+  //    this.props.onAdd(this.state.text);
+  //     this.setState({
+  //       text: "",
+  //     });
+  //   }
+  // }
   onSubmit(e) {
     e.preventDefault();
-    if (this.state.text.trim() !== "") {
-     this.props.onAdd(this.state.text);
-      this.setState({
-        text: "",
-      });
-    }
+ console.log("Click submit");
   }
   render() {
     return (
