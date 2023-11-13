@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import styled from "styled-components";
 //img
 import logoImg from "./img/logo.png";
@@ -6,19 +6,26 @@ import likeImg from "./img/heart.png";
 //import heartRed from "./img/heartRed.png"
 import commentsImg from "./img/comments.png";
 import repost from "./img/repost.png";
+import more from '../../../myPage/followers/followersItem/more.png'
 
 const HeaderWrap = styled.div`
-width: 730px;
+  width: 730px;
   height: 56px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  ${'' /* border:1px solid green; */}
+  margin:0px auto;
 `
 const HeaderItem = styled.div`
   margin-top: 7px;
-  margin-left: 15px;
+  ${'' /* margin-left: 15px; */}
   width: 220px;
   height: 40px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  ${'' /* border:1px solid red; */}
 `
 const HeaderImg = styled.img`
   width: 30px;
@@ -49,6 +56,22 @@ const HeaderTime = styled.span`
   font-weight: 500;
   line-height: normal;
   margin-top: 5px;
+`
+const HeaderMore = styled.button`
+    margin-top:5px;
+    width: 25px;
+    height: 20px;
+    position:relative;
+    border-radius:30px;
+    background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+`
+const MoreItem = styled.img`
+width:25px;
+height:25px;
+margin-left:-5px;
+margin-top:-3px;
 `
 const ContentWrap = styled.div`
   width: 700px;
@@ -85,11 +108,28 @@ const ButtonLabel = styled.span`
   line-height: normal;
 `
 const ContentText = styled.span`
-font-size:20px;
+font-size:16px;
 text-align:justify;
 `
+// const BlockHandler = styled.div`
+// width:10px;
+// heart:10px;
+// border:1px solid red;`
 
 export default class PostListItem extends React.Component {
+  constructor(props){
+    super(props);
+    this.handleMouseEnter = this.handleMouseEnter.bind(this);
+    this.handleMouseLeave = this.handleMouseLeave.bind(this);
+
+  }
+  handleMouseEnter = () => {
+    console.log('Мышь вошла!');  
+  }
+  handleMouseLeave() {
+    console.log('Мышь ушла!');
+   
+  }
   render() {
     const {
             label,
@@ -111,10 +151,14 @@ export default class PostListItem extends React.Component {
               </HeaderTime>
             </HeaderLabelWrap>
           </HeaderItem>
+          <HeaderMore>
+            <MoreItem  onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} src={more} alt="more"/>
+          </HeaderMore>
         </HeaderWrap>
 
        <ContentWrap>
-        <ContentText>{label}</ContentText>
+        <ContentText>{label}
+          </ContentText>
        
        </ContentWrap>
 

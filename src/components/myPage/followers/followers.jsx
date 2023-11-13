@@ -14,15 +14,7 @@ export default class Followers extends React.Component{
             <FollowersWrap>
                 <FollowersItem/>
                 <FollowersItem/>
-                <FollowersItem/>
-                <FollowersItem/>
-                <FollowersItem/>
-                <FollowersItem/>
-                <FollowersItem/>
-                <FollowersItem/>
-                <FollowersItem/>
-                <FollowersItem/>
-            
+
             </FollowersWrap>
         )
 
