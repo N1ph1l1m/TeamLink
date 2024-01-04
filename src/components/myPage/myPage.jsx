@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Todo from "../homepage/todo";
+import Todo from "../homepage/todo/todo";
 import MyContentNav from "./myContentNav/myContentNav";
 import  PostAddForm from '../homepage/news/post-add-form/post-add-form'
 import './myPage.css'
@@ -23,7 +23,6 @@ const MyPageMainWrap = styled.div`
 //     min-height: 1000px;
 //     border: 1px solid #E4E4E4;
 //     color: rgb(12, 11, 11);
-
 //     `
 const MyPageWrap = styled.div`
      width: 800px;
@@ -39,17 +38,13 @@ const MyPageHeader = styled.div`
     height: 300px;
     border: 1px solid #e4e4e4;
 `;
-
-
-export default class MyPage extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
+class MyPage extends React.Component{
+        state = {
             name:'Peter',
             surname:'Parker',
             status: 'This my first status',
         }
-    }
+    
     render(){
         const name = this.state.name,
          surname = this.state.surname,
@@ -92,3 +87,4 @@ export default class MyPage extends React.Component{
         )
     }
 }
+export default MyPage;

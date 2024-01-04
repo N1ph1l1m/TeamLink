@@ -6,7 +6,7 @@ const PhotosWrap = styled.div`
 width:780px;
 `
 
-export default class Photos extends React.Component{
+class Photos extends React.Component{
     render(){
         return(
             <PhotosWrap>
@@ -15,4 +15,4 @@ export default class Photos extends React.Component{
         )
     }
 }
- 
+export default Photos

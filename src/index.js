@@ -4,10 +4,10 @@ import { createBrowserRouter,RouterProvider} from "react-router-dom";
 
 import Header from "../src/components/header/header"
 import Root from "./routes/root"
-import HomePage from './components/homepage/homepage';
+import HomePage from './components/homepage/homepage'
 import ErrorPage from './components/errorPage/error-page';
-import Messages from './components/messages';
-import MyPage from './components/myPage';
+import Messages from './components/messages/messages';
+import MyPage from './components/myPage/myPage';
 
 import './index.css';
 import styled from 'styled-components'

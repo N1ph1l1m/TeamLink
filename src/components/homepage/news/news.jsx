@@ -7,26 +7,20 @@ const NewsWrap = styled.div`
     max-width: 800px;
     min-height: 1000px;
     color: rgb(12, 11, 11);
-
     `
 
-export default class News extends React.Component{
-  constructor(props){
-    super(props);
-    this.state={
+class News extends React.Component{
+  
+    state={
     };
-    this.onToggleLiked = this.onToggleLiked.bind(this);
-    this.onToggleComment = this.onToggleComment.bind(this);
-    this.onToggleRepost = this.onToggleRepost.bind(this);
-  }
-  onToggleLiked(){
+  onToggleLiked = ()=> {
     console.log("Click like");
   }
-  onToggleComment(){
+  onToggleComment = () => {
     console.log("Click comments");
   }
 
-  onToggleRepost(){
+  onToggleRepost = () =>{
     console.log("Click share post");
   }
   
@@ -44,11 +38,9 @@ export default class News extends React.Component{
           onToggleLiked = {this.onToggleLiked}
           onToggleComment = {this.onToggleComment}
           onToggleRepost = {this.onToggleRepost}
-       
         />
-        
-      
       </NewsWrap>
     )
    }
 }
+export default News

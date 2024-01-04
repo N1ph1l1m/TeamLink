@@ -10,7 +10,7 @@ const TaskBlockITem_wr = styled.div`
         box-sizing: border-box;
     `
 
-export default  class TaskBlockItem  extends React.Component{
+class TaskBlockItem  extends React.Component{
     render (){
         return(
             <TaskBlockITem_wr>
@@ -41,3 +41,4 @@ export default  class TaskBlockItem  extends React.Component{
         )
     }
 }
+export default TaskBlockItem;

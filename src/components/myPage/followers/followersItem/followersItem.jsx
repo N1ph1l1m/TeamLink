@@ -58,8 +58,7 @@ const MoreItem = styled.img`
 width:25px;
 height:25px;
 `
-
-export default class FollowerItem extends React.Component{
+class FollowerItem extends React.Component{
     render(){
         return(
         <FollowersWrap>
@@ -82,3 +81,4 @@ export default class FollowerItem extends React.Component{
 
     }
 } 
+export default FollowerItem;

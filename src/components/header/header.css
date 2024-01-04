@@ -1,8 +1,10 @@
 .header_wrap{
+    min-width: 1300px;
     position:relative;
-
+    left: 0;
     height: 90px;
     background-color: #3486eb;
+    
 }
 .header_wrap_logo{
     margin: 0 auto;

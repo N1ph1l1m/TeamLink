@@ -21,7 +21,7 @@ const NavWrap = styled.div`
   margin-bottom: 20px;
 `;
 
-export default function Root() {
+ function Root() {
   return (
     <>
       <div className="navBar_wrap">
@@ -103,3 +103,4 @@ export default function Root() {
     </>
   );
 }
+export default Root;

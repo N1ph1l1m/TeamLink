@@ -9,8 +9,7 @@ flex-flow: column nowrap;
 border:1px solid red;
 align-items:center;
 `
-
-export default class Likes extends React.Component{
+class Likes extends React.Component{
     render(){
         return(
             <LikesWrap>
@@ -19,3 +18,4 @@ export default class Likes extends React.Component{
         )
     }
 }
+export default Likes;

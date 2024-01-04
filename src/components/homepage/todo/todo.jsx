@@ -1,5 +1,5 @@
 import React from "react";
-import TaskBlock from "./task_block";
+import TaskBlock from "./task_block/task_block";
 
 import styled from 'styled-components'
 
@@ -7,10 +7,7 @@ const TodoWR = styled.div`
           width: 300px;
           margin-right: 10px;
     `
-
-
-
-export default class Todo extends React.Component{
+ class Todo extends React.Component{
    render(){
     return(
       <TodoWR>
@@ -21,3 +18,5 @@ export default class Todo extends React.Component{
     )
    }
 }
+
+export default Todo;

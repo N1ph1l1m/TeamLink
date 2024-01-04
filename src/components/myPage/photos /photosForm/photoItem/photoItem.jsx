@@ -17,7 +17,7 @@ height:200px;
 border-radius:3px;
 
 `
-export default class PhotoItem extends React.Component{
+class PhotoItem extends React.Component{
     render(){
         return(
             <PhotosItemWrap>
@@ -26,3 +26,4 @@ export default class PhotoItem extends React.Component{
         )
     }
 }
+export default PhotoItem;
