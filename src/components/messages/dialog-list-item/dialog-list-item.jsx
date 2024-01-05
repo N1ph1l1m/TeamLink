@@ -13,7 +13,7 @@ const ListItem = styled.div`
     justify-content:center;
 `
 
-export default class DialogListItem extends  React.Component{
+ class DialogListItem extends  React.Component{
     render(){
         return(
             <ListItem>
@@ -29,3 +29,4 @@ export default class DialogListItem extends  React.Component{
         )
     }
 }
+export default DialogListItem;

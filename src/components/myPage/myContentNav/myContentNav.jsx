@@ -1,5 +1,5 @@
 import React from "react";
-import Followers from "../followers";
+import Followers from "../followers/followers";
 import News from "../../homepage/news/news";
 import Likes from "../likes/likes";
 import styled from "styled-components";
@@ -57,35 +57,28 @@ const NewsWrap = styled.div`
   margin:0px auto;
   margin-bottom:10px;
 `
-export default class MyContentNav extends React.Component{
+class MyContentNav extends React.Component{
 
-  constructor(props){
-    super(props);
-    this.state = {
+    state = {
         show:1,
     }
-     this.showFolow = this.showFolow.bind(this);
-     this.showLikes = this.showLikes.bind(this);
-     this.showNews = this.showNews.bind(this);
-     this.showPhotos = this.showPhotos.bind(this);
-}
 
- showFolow(){
+ showFolow = ()=> {
     this.setState(numItem =>({
       show: numItem = 1
     }));
   }
-  showLikes(){
+  showLikes = ()=> {
     this.setState(numItem =>({
       show: numItem = 2 
     }))
   }
-  showNews(){
+  showNews = ()=> {
     this.setState(numItem =>({
       show: numItem = 3
     }));
   }
-  showPhotos(){
+  showPhotos = ()=> {
     this.setState(numItem =>({
       show: numItem = 4
     }));
@@ -138,3 +131,4 @@ export default class MyContentNav extends React.Component{
         );
   }
 }
+export default MyContentNav;

@@ -8,7 +8,7 @@ min-height:800px;
 display:flex;
 flex-flow: column nowrap;
 `
-export default class Followers extends React.Component{
+class Followers extends React.Component{
     render(){
         return(
             <FollowersWrap>
@@ -20,3 +20,4 @@ export default class Followers extends React.Component{
 
     }
 } 
+export default Followers;

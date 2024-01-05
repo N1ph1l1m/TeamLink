@@ -31,7 +31,7 @@ const DialogListWrap = styled.div`
     }
     `
 
-export default class DialogList extends  React.Component{
+ class DialogList extends  React.Component{
     render(){
         return(
            <DialogListWrap>
@@ -40,3 +40,4 @@ export default class DialogList extends  React.Component{
         )
     }
 }
+export default DialogList;

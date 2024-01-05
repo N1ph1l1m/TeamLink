@@ -1,6 +1,6 @@
 import React  from "react";
 import News from "./news/news";
-import Todo from "./todo";
+import Todo from "./todo/todo";
 import styled from "styled-components";
 
 
@@ -12,7 +12,7 @@ const HomePageWrap = styled.div`
     justify-content: space-between;
 `;
 
-export default class HomePage extends React.Component{
+class HomePage extends React.Component{
    render(){
     return(
       <HomePageWrap>
@@ -22,3 +22,4 @@ export default class HomePage extends React.Component{
     )
    }
 }
+export default HomePage;

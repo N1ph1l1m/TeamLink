@@ -15,8 +15,7 @@ const TaskBlockWR = styled.div`
         border-radius: 10px;
     `
     
-
-export default class TaskBlock extends React.Component{
+ class TaskBlock extends React.Component{
     render(){
         return(
            <TaskBlockWR>
@@ -25,3 +24,5 @@ export default class TaskBlock extends React.Component{
         )
     }
 }
+
+export default TaskBlock;

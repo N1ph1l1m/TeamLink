@@ -116,17 +116,13 @@ text-align:justify;
 // heart:10px;
 // border:1px solid red;`
 
-export default class PostListItem extends React.Component {
-  constructor(props){
-    super(props);
-    this.handleMouseEnter = this.handleMouseEnter.bind(this);
-    this.handleMouseLeave = this.handleMouseLeave.bind(this);
+class PostListItem extends React.Component {
 
-  }
+  
   handleMouseEnter = () => {
     console.log('Мышь вошла!');  
   }
-  handleMouseLeave() {
+  handleMouseLeave = () => {
     console.log('Мышь ушла!');
    
   }
@@ -193,3 +189,4 @@ export default class PostListItem extends React.Component {
     );
   }
 }
+export default PostListItem;

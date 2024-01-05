@@ -23,7 +23,7 @@ const ChatWrap = styled.div`
   width: 700px;
   height: 705px;
 `;
-export default class Messages extends Component {
+ class Messages extends Component {
   render() {
     return (
       <MessagesWrap>
@@ -44,3 +44,4 @@ export default class Messages extends Component {
     );
   }
 }
+export default Messages;
